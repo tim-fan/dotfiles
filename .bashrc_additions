@@ -1,3 +1,6 @@
 alias tls="tmux list-sessions"
 alias tat="tmux attach -t "
 bind '\C-f:unix-filename-rubout'
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
