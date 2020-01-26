@@ -1,6 +1,7 @@
 set paste
 set expandtab
 set tabstop=4
+colorscheme elflord
 
 "not too clear what this does. 
 "Came from https://sanctum.geek.nz/arabesque/series/unix-as-ide/
