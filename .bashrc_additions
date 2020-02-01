@@ -1,6 +1,14 @@
 alias tls="tmux list-sessions"
 alias tat="tmux attach -t "
+alias history_no_line_numbers="history | sed 's/^ *[0-9]* *//'"
 bind '\C-f:unix-filename-rubout'
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+shopt -s histappend
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
