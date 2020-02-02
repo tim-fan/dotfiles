@@ -1,5 +1,7 @@
 [user]
 	email = tim.fanselow@gmail.com
-	name = Tim Fanselow
+	name = tim-fan
+[push]
+	default = simple
 [alias]
 	st = status
