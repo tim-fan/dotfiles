@@ -1,6 +1,11 @@
 alias tls="tmux list-sessions"
 alias tat="tmux attach -t "
 alias history_no_line_numbers="history | sed 's/^ *[0-9]* *//'"
+alias clip="xclip -i -selection c" #from: http://stackoverflow.com/questions/749544/pipe-to-from-the-clipboard
+alias clipout="xclip -o -selection c"
+alias pgrep="pgrep -l "
+alias sl="ls"
+
 bind '\C-f:unix-filename-rubout'
 
 export VISUAL=vim
@@ -12,3 +17,7 @@ shopt -s histappend
 
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+#Add ~/bin to path
+PATH=$HOME/bin:$HOME/.local/bin/:$PATH
+
