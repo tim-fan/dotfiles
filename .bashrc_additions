@@ -15,9 +15,11 @@ export HISTSIZE=10000
 export HISTFILESIZE=10000
 shopt -s histappend
 
-# Save and reload the history after each command finishes
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+## Save and reload the history after each command finishes
+# Currently disabled!
+# This seemed to cause page-up to show the last command in *any* terminal,
+# not the last command in th current terminal, which was annoying
+# export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
-#Add ~/bin to path
-PATH=$HOME/bin:$HOME/.local/bin/:$PATH
-
+#Add ~/tfanselo/bin to path
+PATH=$HOME/tfanselo/bin:$HOME/.local/bin/:$PATH
