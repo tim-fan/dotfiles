@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 # link dotfiles in this repo to appropriate locations
 
